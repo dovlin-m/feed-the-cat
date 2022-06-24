@@ -1,0 +1,13 @@
+mixin packaging(idPackaging, element, composition, quantity, fun, funCat, value, footerID)
+  div
+    div.cat.border(id=idPackaging value=value style="--top-left:30px;" onclick=fun)
+      div.padding
+        h3.h3 Сказочное заморское яство
+        h2 Нямушка
+        p.h2-elem #{element}
+        p.composition #{composition}
+      img.cat-img(src="../pictures/cat.png" alt="cat")
+      div.weight
+        p #{quantity}
+        p.weight-elem кг
+    p.footer-pack(value=value class=funCat) Чего сидишь? Порадуй котэ, #[a.a(onclick=fun value=value) купи.]
