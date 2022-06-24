@@ -7,7 +7,7 @@ const buildSass = () => {
 
   return src('scss/app.scss')
     .pipe(sass())
-    .pipe(dest('css/'));
+    .pipe(dest('build/css/'));
 }
 
 const buildPug = () => {
@@ -16,7 +16,7 @@ const buildPug = () => {
   return src("pug/index.pug")
     .pipe(pug({pretty: true}))
     .pipe(pug())
-    .pipe(dest('html/'));
+    .pipe(dest('build/'));
 }
 
 exports.build = parallel(buildSass, buildPug);
