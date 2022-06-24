@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>feed the cat</title>
+  <link rel="stylesheet" href="../build/css/app.css">
+  <script src="../js/cat.js"></script>
+</head>
+</html>
+<body>
+<section class="background">
+  <h1>Ты сегодня покормил кота?</h1>
+  <div class="packaging">
+    <div>
+      <div class="cat border" id="foie-gras" value="true" style="--top-left:30px;" onclick="fun1(id); spoiler(id);">
+        <div class="padding">
+          <h3 class="h3">Сказочное заморское яство</h3>
+          <h2>Нямушка</h2>
+          <p class="h2-elem">с фуа-гра</p>
+          <p class="composition">10 порций мышь в подарок</p>
+        </div><img class="cat-img" src="../pictures/cat.png" alt="cat">
+        <div class="weight">
+          <p>0,5</p>
+          <p class="weight-elem">кг</p>
+        </div>
+      </div>
+      <p class="footer-pack par-foie" value="true">Чего сидишь? Порадуй котэ, <a class="a" onclick="fun1(id); spoiler(id);" value="true">купи.</a></p>
+    </div>
+    <div>
+      <div class="cat border" id="fish" value="true" style="--top-left:30px;" onclick="fun2(id); spoiler(id);">
+        <div class="padding">
+          <h3 class="h3">Сказочное заморское яство</h3>
+          <h2>Нямушка</h2>
+          <p class="h2-elem">с рыбой</p>
+          <p class="composition">40 порций 2 мыши в подарок</p>
+        </div><img class="cat-img" src="../pictures/cat.png" alt="cat">
+        <div class="weight">
+          <p>2</p>
+          <p class="weight-elem">кг</p>
+        </div>
+      </div>
+      <p class="footer-pack par-fish" value="true">Чего сидишь? Порадуй котэ, <a class="a" onclick="fun2(id); spoiler(id);" value="true">купи.</a></p>
+    </div>
+    <div>
+      <div class="cat border" id="chicken" value="false" style="--top-left:30px;" onclick="fun3(id); spoiler(id);">
+        <div class="padding">
+          <h3 class="h3">Сказочное заморское яство</h3>
+          <h2>Нямушка</h2>
+          <p class="h2-elem">с курицей</p>
+          <p class="composition">100 порций 5 мышей в подарок заказчик доволен</p>
+        </div><img class="cat-img" src="../pictures/cat.png" alt="cat">
+        <div class="weight">
+          <p>5</p>
+          <p class="weight-elem">кг</p>
+        </div>
+      </div>
+      <p class="footer-pack par-chicken" value="false">Чего сидишь? Порадуй котэ, <a class="a" onclick="fun3(id); spoiler(id);" value="false">купи.</a></p>
+    </div>
+  </div>
+</section>
+</body>
