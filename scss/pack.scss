@@ -1,9 +1,181 @@
 .packaging {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .cat {
-  background: #ffffff center;
-  background-size: cover;
+  position: relative;
+  background: #F2F2F2;
+  border-radius: 12px;
+  width: 320px;
+  height: 480px;
+  overflow: hidden;
+}
+
+.cat-img {
+  position: absolute;
+  width: 368px;
+  height: 360px;
+  top: 208px;
+  left: -24px;
+}
+
+.a {
+  color: #2EA8E6;
+  border-bottom: 1px dashed #2ea8e6;
+  text-decoration: none;
+}
+
+.border {
+  --all: 0px;
+  --b: rgb(22, 152, 217);
+
+  border: 4px solid rgb(22, 152, 217);
+
+  background: linear-gradient(135deg, var(--b) 0 calc(var(--top-left, var(--all)) + 4px), transparent 0) top left/50% 50%, #f2f2f2;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  -webkit-mask:
+          linear-gradient(45deg, transparent 0 var(--bottom-left, var(--all)), #fff 0) bottom left,
+          linear-gradient(-45deg, transparent 0 var(--bottom-right, var(--all)), #fff 0) bottom right,
+          linear-gradient(135deg, transparent 0 var(--top-left, var(--all)), #1698D9 0) top left,
+          linear-gradient(-135deg, transparent 0 var(--top-right, var(--all)), #fff 0) top right;
+  -webkit-mask-size: 50.5% 50.5%;
+  -webkit-mask-repeat: no-repeat;
+
+  .weight {
+    background: #2EA8E6;
+  }
+}
+
+.active-border {
+  --all: 0px;
+  --b: #E52E7A;
+
+  border: 4px solid #E52E7A;
+
+  background: linear-gradient(135deg, var(--b) 0 calc(var(--top-left, var(--all)) + 4px), transparent 0) top left/50% 50%, #f2f2f2;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  -webkit-mask:
+          linear-gradient(45deg, transparent 0 var(--bottom-left, var(--all)), #fff 0) bottom left,
+          linear-gradient(-45deg, transparent 0 var(--bottom-right, var(--all)), #fff 0) bottom right,
+          linear-gradient(135deg, transparent 0 var(--top-left, var(--all)), #1698D9 0) top left,
+          linear-gradient(-135deg, transparent 0 var(--top-right, var(--all)), #fff 0) top right;
+  -webkit-mask-size: 50.5% 50.5%;
+  -webkit-mask-repeat: no-repeat;
+
+  .weight {
+    background: #D91667;
+  }
+}
+
+.none-border {
+  --all: 0px;
+  --b: #B3B3B3;
+
+  border: 4px solid #B3B3B3;
+
+  background: linear-gradient(135deg, var(--b) 0 calc(var(--top-left, var(--all)) + 4px), transparent 0) top left/50% 50%, #f2f2f2;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  -webkit-mask:
+          linear-gradient(45deg, transparent 0 var(--bottom-left, var(--all)), #fff 0) bottom left,
+          linear-gradient(-45deg, transparent 0 var(--bottom-right, var(--all)), #fff 0) bottom right,
+          linear-gradient(135deg, transparent 0 var(--top-left, var(--all)), #1698D9 0) top left,
+          linear-gradient(-135deg, transparent 0 var(--top-right, var(--all)), #fff 0) top right;
+  -webkit-mask-size: 50.5% 50.5%;
+  -webkit-mask-repeat: no-repeat;
+
+  .weight {
+    background: #B3B3B3;
+  }
+
+  h3,
+  h2,
+  p {
+    color: #B3B3B3;
+  }
+
+  .weight {
+    p {
+      color: #FFFFFF;
+    }
+  }
+
+  .footer-pack {
+    color: #FFFF66;
+  }
+
+  img {
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+}
+
+.weight {
+  display: flex;
+  text-align: center;
+  height: 80px;
+  width: 80px;
+  top: 384px;
+  left: 224px;
+  position: absolute;
+  border-radius: 50%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  p {
+    margin-top: 20px;
+    position: absolute;
+    font-family: "Trebuchet MS", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .weight-elem {
+    font-size: 21px;
+    bottom: 8px;
+    left: 30px;
+    margin: 0;
+  }
+}
+
+.h2-elem {
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.padding {
+  padding-left: 51px;
+}
+
+.composition {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+}
+
+.footer-pack{
+  font-family: "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 60px;
 }
